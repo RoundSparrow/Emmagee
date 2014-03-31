@@ -38,10 +38,11 @@
     <string name="floating_output_CPUlabel">应用/总体CPU:</string>
     <string name="floating_output_trafficLabel">流量:</string>
     <string name="floating_output_batteryLabel">电流</string>
-    <string name="output_unusedMemory">计算中,请稍后...</string>
+    <string name="floating_output_analyzingMemory">计算中,请稍后...</string>
     <string name="output_toast_label_startTime">启动时间:</string>
     <string name="output_toast_label_stopService">测试结果文件：</string>
     <string name="output_toast_pickApplicationFirst">请选择需要测试的应用程序</string>
     <string name="floating_output_button_stop">停止测试</string>
+    <string name="output_toast_pickApplication_exception">该程序无法启动</string>
 
 </resources>

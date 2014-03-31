@@ -4,7 +4,7 @@
     <string name="hello">Hello World, RunningTaskActivity!</string>
     <string name="app_name">Emmagee</string>
     <string name="app_name1">Main</string>
-    <string name="app_name2">name2</string>
+    <string name="app_name2">System</string>
     <string name="app_name3">name3</string>
     <string name="app_name4">Settings</string>
     <string name="system">System</string>
@@ -21,8 +21,8 @@
     <string name="seconds"> seconds</string>
     <string name="window"> window</string>
     <string name="ok">OK</string>
-    <string name="openwifi">open wifi</string>
-    <string name="closewifi">close wifi</string>
+    <string name="openwifi">WiFi On</string>
+    <string name="closewifi">WiFi Off</string>
     <string name="stopTest">halt test</string>
 
     <string name="menu_action_delete">Exit</string>
@@ -32,17 +32,19 @@
     <string name="dialog_title_exit">Exit the program?</string>
     <string name="button_beginTest">Begin Test</string>
 
-    <string name="button_endTest">Test2</string>
+    <string name="button_endTest">End Monitoring</string>
     <string name="button_test3">Test3</string>     <!-- duplicate of 1 -->
-    <string name="button_startService">Begin Test</string>     <!-- duplicate of 1 -->
+    <string name="button_startService">Begin Monitoring</string>     <!-- duplicate of 1 -->
     <string name="floating_output_memoryLabel">this/free:</string>
     <string name="floating_output_CPUlabel">this/all CPU:</string>
     <string name="floating_output_trafficLabel">traffic:</string>
     <string name="floating_output_batteryLabel">battery</string>
-    <string name="output_unusedMemory">Unused memory...</string>
+    <string name="floating_output_analyzingMemory">Analyzing memory...</string>
     <string name="output_toast_label_startTime">start time:</string>
     <string name="output_toast_label_stopService">stop service, file：</string>
     <string name="output_toast_pickApplicationFirst">Pick application first</string>
     <string name="floating_output_button_stop">Stop</string>
+    <string name="output_toast_pickApplication_exception">Exception picking this App</string>
+
 
 </resources>

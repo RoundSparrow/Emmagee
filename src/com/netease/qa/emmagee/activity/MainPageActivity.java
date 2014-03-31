@@ -76,6 +76,7 @@ public class MainPageActivity extends Activity {
 	private UpdateReceiver receiver;
     // Previously this used button string matching, doesn't work translated. Now use a state boolean.
     private boolean buttonSetStart = true;
+    private boolean tryAnywayEvenIfStartActivityFails = true;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -105,11 +106,15 @@ public class MainPageActivity extends Activity {
 								Log.d(LOG_TAG, e.getMessage());
 						 }
 						try {
+                            // ToDo: not all applications have an Activity - so can we device a way to pick them for monitoring through some other means?
 							startActivity = intent.resolveActivity(getPackageManager()).getShortClassName();
 							startActivity(intent);
 						} catch (Exception e) {
-							Toast.makeText(MainPageActivity.this, "该程序无法启动", Toast.LENGTH_LONG).show();
-							return;
+							Toast.makeText(MainPageActivity.this, getString(R.string.output_toast_pickApplication_exception), Toast.LENGTH_LONG).show();
+							if (!tryAnywayEvenIfStartActivityFails)
+                            {
+                                return;
+                            }
 						}
 						waitForAppStart(packageName);
 						monitorService.putExtra("processName", processName);

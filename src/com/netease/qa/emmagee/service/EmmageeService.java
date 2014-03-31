@@ -198,7 +198,7 @@ public class EmmageeService extends Service {
 			} else {
 				btnWifi.setText(R.string.openwifi);
 			}
-			txtUnusedMem.setText(getString(R.string.output_unusedMemory));
+			txtUnusedMem.setText(getString(R.string.floating_output_analyzingMemory));
 			txtUnusedMem.setTextColor(android.graphics.Color.RED);
 			txtTotalMem.setTextColor(android.graphics.Color.RED);
 			txtTraffic.setTextColor(android.graphics.Color.RED);
