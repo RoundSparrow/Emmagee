@@ -4,9 +4,9 @@
     <string name="hello">Hello World, RunningTaskActivity!</string>
     <string name="app_name">Emmagee</string>
     <string name="app_name1">Main</string>
-    <string name="app_name2">系统信息</string>
-    <string name="app_name3">测试</string>
-    <string name="app_name4">设置</string>
+    <string name="app_name2">name2</string>
+    <string name="app_name3">name3</string>
+    <string name="app_name4">name4</string>
     <string name="system">System</string>
     <string name="start">Start</string>
     <string name="cpu">CPU</string>
