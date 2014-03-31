@@ -1,0 +1,23 @@
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/gen/com/netease/qa/emmagee/R.java \
+ : /spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/values/strings.xml \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/values-en/strings.xml \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-hdpi/close.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-hdpi/icon.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-hdpi/meminfo.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-hdpi/button_bg.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-hdpi/ic_launcher.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-ldpi/icon.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-ldpi/meminfo.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-ldpi/ic_launcher.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/layout/floating.xml \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/layout/systemstat.xml \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/layout/settings.xml \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/layout/mainpage.xml \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/layout/list_item.xml \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/layout/memory.xml \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/layout/cpu.xml \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-mdpi/icon.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-mdpi/meminfo.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-mdpi/button_bg.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/res/drawable-mdpi/ic_launcher.png \
+/spot/CameraCornetGit0/outsideapps/emmagee/Roundsparrow_Emmagee_fork0/bin/AndroidManifest.xml \
