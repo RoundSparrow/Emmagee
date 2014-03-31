@@ -90,6 +90,7 @@ public class MainPageActivity extends Activity {
 			public void onClick(View v) {
 				monitorService = new Intent();
 				monitorService.setClass(MainPageActivity.this, EmmageeService.class);
+                // ToDo: Matching untranslated string of button?
 				if ("开始测试".equals(btnTest.getText().toString())) {
 					if (isRadioChecked) {
 						Intent intent = getPackageManager().getLaunchIntentForPackage(packageName);
@@ -116,12 +117,12 @@ public class MainPageActivity extends Activity {
 						monitorService.putExtra("settingTempFile", settingTempFile);
 						monitorService.putExtra("startActivity", startActivity);
 						startService(monitorService);
-						btnTest.setText("停止测试");
+						btnTest.setText(getString(R.string.button_test2));
 					} else {
 						Toast.makeText(MainPageActivity.this, "请选择需要测试的应用程序", Toast.LENGTH_LONG).show();
 					}
 				} else {
-					btnTest.setText("开始测试");
+					btnTest.setText(getString(R.string.button_test));
 					Toast.makeText(MainPageActivity.this, "测试结果文件：" + EmmageeService.resultFilePath, Toast.LENGTH_LONG).show();
 					stopService(monitorService);
 				}
@@ -161,7 +162,7 @@ public class MainPageActivity extends Activity {
 		super.onResume();
 		Log.d(LOG_TAG, "onResume");
 		if (EmmageeService.isStop) {
-			btnTest.setText("开始测试");
+			btnTest.setText(this.getString(R.string.button_test));
 		}
 	}
 
@@ -241,8 +242,8 @@ public class MainPageActivity extends Activity {
 	 * @return true
 	 */
 	public boolean onCreateOptionsMenu(Menu menu) {
-		menu.add(0, Menu.FIRST, 0, "退出").setIcon(android.R.drawable.ic_menu_delete);
-		menu.add(0, Menu.FIRST, 1, "设置").setIcon(android.R.drawable.ic_menu_directions);
+		menu.add(0, Menu.FIRST, 0, this.getString(R.string.menu_action_delete)).setIcon(android.R.drawable.ic_menu_delete);
+		menu.add(0, Menu.FIRST, 1, this.getString(R.string.menu_action_directions)).setIcon(android.R.drawable.ic_menu_directions);
 		return true;
 	}
 
@@ -276,7 +277,7 @@ public class MainPageActivity extends Activity {
 	protected Dialog onCreateDialog(int id) {
 		switch (id) {
 		case 0:
-			return new AlertDialog.Builder(this).setTitle("确定退出程序？").setPositiveButton("确定", new android.content.DialogInterface.OnClickListener() {
+			return new AlertDialog.Builder(this).setTitle(this.getString(R.string.dialog_title_exit)).setPositiveButton(this.getString(R.string.dialog_yes), new android.content.DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
 					if (monitorService != null) {
@@ -288,7 +289,7 @@ public class MainPageActivity extends Activity {
 					finish();
 					System.exit(0);
 				}
-			}).setNegativeButton("取消", null).create();
+			}).setNegativeButton(this.getString(R.string.dialog_no), null).create();
 		default:
 			return null;
 		}

@@ -6,7 +6,7 @@
     <string name="app_name1">Main</string>
     <string name="app_name2">name2</string>
     <string name="app_name3">name3</string>
-    <string name="app_name4">name4</string>
+    <string name="app_name4">Settings</string>
     <string name="system">System</string>
     <string name="start">Start</string>
     <string name="cpu">CPU</string>
@@ -25,4 +25,18 @@
     <string name="closewifi">close wifi</string>
     <string name="stopTest">halt test</string>
 
+    <string name="menu_action_delete">Exit</string>
+    <string name="menu_action_directions">Settings</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_title_exit">Exit the program?</string>
+    <string name="button_test">Test</string>
+
+    <string name="button_test2">Test2</string>
+    <string name="button_test3">Test3</string>     <!-- duplicate of 1 -->
+    <string name="floating_output_memoryLabel">this/free:</string>
+    <string name="floating_output_CPUlabel">this/all CPU:</string>
+    <string name="floating_output_trafficLabel">traffic:</string>
+    <string name="floating_output_batteryLabel">battery</string>
+    <string name="output_unusedMemory">Unused memory...</string>
 </resources>

@@ -198,7 +198,7 @@ public class EmmageeService extends Service {
 			} else {
 				btnWifi.setText(R.string.openwifi);
 			}
-			txtUnusedMem.setText("计算中,请稍后...");
+			txtUnusedMem.setText(getString(R.string.output_unusedMemory));
 			txtUnusedMem.setTextColor(android.graphics.Color.RED);
 			txtTotalMem.setTextColor(android.graphics.Color.RED);
 			txtTraffic.setTextColor(android.graphics.Color.RED);
@@ -271,9 +271,19 @@ public class EmmageeService extends Service {
 			bw = new BufferedWriter(osw);
 			long totalMemorySize = memoryInfo.getTotalMemory();
 			String totalMemory = fomart.format((double) totalMemorySize / 1024);
-			bw.write("指定应用的CPU内存监控情况\r\n" + "应用包名：," + packageName + "\r\n" + "应用名称: ," + processName + "\r\n" + "应用PID: ," + pid + "\r\n"
-					+ "机器内存大小(MB)：," + totalMemory + "MB\r\n" + "机器CPU型号：," + cpuInfo.getCpuName() + "\r\n" + "机器android系统版本：,"
-					+ memoryInfo.getSDKVersion() + "\r\n" + "手机型号：," + memoryInfo.getPhoneType() + "\r\n" + "UID：," + uid + "\r\n" + START_TIME);
+			bw.write(""
+                    + "指定应用的CPU内存监控情况\r\n"
+                    + "应用包名：," + packageName + "\r\n"
+                    + "应用名称: ," + processName + "\r\n"
+                    + "应用PID: ," + pid + "\r\n"
+					+ "机器内存大小(MB)：," + totalMemory + "MB\r\n"
+                    + "机器CPU型号：," + cpuInfo.getCpuName() + "\r\n"
+                    + "机器android系统版本：,"
+					+ memoryInfo.getSDKVersion() + "\r\n"
+                    + "手机型号：," + memoryInfo.getPhoneType() + "\r\n"
+                    + "UID：," + uid + "\r\n"
+                    + START_TIME
+                );
 			bw.write("时间" + "," + "应用占用内存PSS(MB)" + "," + "应用占用内存比(%)" + "," + " 机器剩余内存(MB)" + "," + "应用占用CPU率(%)" + "," + "CPU总使用率(%)" + ","
 					+ "流量(KB)" + "," + "电量(%)" + "," + "电流(mA)" + "," + "温度(C)" + "," + "电压(V)" + "\r\n");
 		} catch (IOException e) {
@@ -466,15 +476,15 @@ public class EmmageeService extends Service {
 				}
 				// 如果cpu使用率存在且都不小于0，则输出
 				if (processCpuRatio != null && totalCpuRatio != null) {
-					txtUnusedMem.setText("应用/剩余内存:" + processMemory + "/" + freeMemoryKb + "MB");
-					txtTotalMem.setText("应用/总体CPU:" + processCpuRatio + "%/" + totalCpuRatio + "%");
-					String batt = "电流:" + currentBatt;
+					txtUnusedMem.setText(getString(R.string.floating_output_memoryLabel) + processMemory + "/" + freeMemoryKb + "MB");
+					txtTotalMem.setText(getString(R.string.floating_output_CPUlabel) + processCpuRatio + "%/" + totalCpuRatio + "%");
+					String batt = getString(R.string.floating_output_batteryLabel) + ":" + currentBatt;
 					if ("-1".equals(trafficSize)) {
-						txtTraffic.setText(batt + ",流量:N/A");
+						txtTraffic.setText(batt + "," + getString(R.string.floating_output_trafficLabel) + "N/A");
 					} else if (isMb)
-						txtTraffic.setText(batt + ",流量:" + fomart.format(trafficMb) + "MB");
+						txtTraffic.setText(batt + "," + getString(R.string.floating_output_trafficLabel) + fomart.format(trafficMb) + "MB");
 					else
-						txtTraffic.setText(batt + ",流量:" + trafficSize + "KB");
+						txtTraffic.setText(batt + "," + getString(R.string.floating_output_trafficLabel) + trafficSize + "KB");
 				}
 				// 当内存为0切cpu使用率为0时则是被测应用退出
 				if ("0".equals(processMemory) && "0.00".equals(processCpuRatio)) {
