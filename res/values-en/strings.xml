@@ -10,7 +10,7 @@
     <string name="system">System</string>
     <string name="start">Start</string>
     <string name="cpu">CPU</string>
-    <string name="bg">Background</string>
+    <string name="bg">Go Background</string>
     <string name="testmemory">Test Memory</string>
     <string name="memoryinfo">memoryInfo</string>
     <string name="collect">collect：</string>
@@ -30,13 +30,19 @@
     <string name="dialog_yes">Yes</string>
     <string name="dialog_no">No</string>
     <string name="dialog_title_exit">Exit the program?</string>
-    <string name="button_test">Test</string>
+    <string name="button_beginTest">Begin Test</string>
 
-    <string name="button_test2">Test2</string>
+    <string name="button_endTest">Test2</string>
     <string name="button_test3">Test3</string>     <!-- duplicate of 1 -->
+    <string name="button_startService">Begin Test</string>     <!-- duplicate of 1 -->
     <string name="floating_output_memoryLabel">this/free:</string>
     <string name="floating_output_CPUlabel">this/all CPU:</string>
     <string name="floating_output_trafficLabel">traffic:</string>
     <string name="floating_output_batteryLabel">battery</string>
     <string name="output_unusedMemory">Unused memory...</string>
+    <string name="output_toast_label_startTime">start time:</string>
+    <string name="output_toast_label_stopService">stop service, file：</string>
+    <string name="output_toast_pickApplicationFirst">Pick application first</string>
+    <string name="floating_output_button_stop">Stop</string>
+
 </resources>

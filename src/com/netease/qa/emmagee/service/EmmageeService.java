@@ -535,7 +535,7 @@ public class EmmageeService extends Service {
 		closeOpenedStream();
 		// replace the start time in file
 		if (!"".equals(startTime)) {
-			replaceFileString(resultFilePath, START_TIME, "启动时间:" + startTime + "\r\n");
+			replaceFileString(resultFilePath, START_TIME, getString(R.string.output_toast_label_startTime) + startTime + "\r\n");
 		} else {
 			replaceFileString(resultFilePath, START_TIME, "");
 		}
